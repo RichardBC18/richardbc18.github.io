@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIECAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/SAL.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="js/productos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+<body>
+
+	<header>
+        <a href="index.html" class="logo"><img src="img/SAL.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="index.html#nosotros">NOSOTROS</a></li>
+            <li><a href="index.html#beneficios">BENEFICIOS</a></li>
+            <li><a href="productos.html">TIENDA</a>
+            </li>
+            <li><a href="index.html#encuentranos">UBICANOS</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="seccion-video-imagen">
+            <div class="promo">
+                <h2>Distribuidor autorizado y especializado de Rotoplas.</h2>
+                <p>¡Conoce los beneficios y promociones que tenemos para ti!</p>
+                <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank">
+                    <button type="button">CONSULTE AQUI</button>
+                </a>
+            </div>
+            <video muted autoplay loop>
+                <source src="img/pexels-rostislav-uzunov-7385122 (2160p).mp4" type="video/mp4">
+            </video>
+            <div class="capa"></div>
+        </section>
+
+        <section class="productos">
+            <div class="filtro-busqueda">
+                <div class="buscador">
+                    <h3>Ingresa un producto</h3>
+                    <input type="text" id="filtro" oninput="filtrarProductos()">
+                </div>
+                <div class="filtro-categoria">
+                    <h3>Categorías</h3>
+                    <button onclick="filtrarPorCategoria('all')" class="mostrar-todos">Mostrar Todos</button>
+                    <button onclick="filtrarPorCategoria('Biodigestores')">Biodigestores</button>
+                    <button onclick="filtrarPorCategoria('Cisternas')">Cisternas</button>
+                    <button onclick="filtrarPorCategoria('Tanques y accesorios domésticos')">Tanques y accesorios domésticos</button>
+                    <button onclick="filtrarPorCategoria('Filtros, cartuchos y pruificadores domésticos')">Filtros, cartuchos y purificadores domésticos</button>
+                    <button onclick="filtrarPorCategoria('Bombas para tanques')">Bombas para tanques</button>
+                    <button onclick="filtrarPorCategoria('Termas')">Termas y accesorios</button>
+                </div>
+                <!-- 
+                <div class="filtro-litro">
+                    <h3>Litros</h3>
+                    <input type="range" min="0" max="100" value="50" class="barra-deslizante" id="rango-litros">
+                    <button onclick="filtrarPorCantidad()">Aplicar</button>
+                </div>
+                -->
+            </div> 
+            <div class="lista-productos">
+                <div class="populares-container">
+                    <!--Inicio BIODIGESTORES-->
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="6">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 600 LTS/2570967512.png" alt="">
+                        </div>
+                        <h4>BIODIGESTOR ROTOPLAS 600 LTS.</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="13">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 1,300 LTS/2570940182.png" alt="">
+                        </div>
+                        <h4>BIODIGESTOR ROTOPLAS 1,300 LTS.</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="30">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 3,000 LTS/2570973257.png" alt="">
+                        </div>
+                        <h4>BIODIGESTOR ROTOPLAS 3,000 LTS.</span></h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="70">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 7,000 LTS/2570967517.png" alt="">
+                        </div>
+                        <h4>BIODIGESTOR ROTOPLAS 7,000 LTS.</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="6">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/REGISTRO DE LODOS PARA 600 LTS/2846002124.jpg" alt="">
+                        </div>
+                        <h4>REGISTRO DE LODOS PARA 600 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin BIODIGESTORES-->
+                    
+                    <!--Inicio CISTERNAS-->
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="12">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/CISTERNA/CISTERNA 2,000 LT con Valv Y Flotador+T. Succión/2570921463.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 1,200 LTS con Valv Y Flotador+T. Succión</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="20">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/CISTERNA/CISTERNA 2,000 LT con Valv Y Flotador+T. Succión/2570921463.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 2,000 LTS con Valv Y Flotador+T. Succión</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="28">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/CISTERNA/CISTERNA 2,800 LTS con Valv Y Flotador+T. Succión/2570940080.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 2,800 LTS con Valv Y Flotador+T. Succión</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="50">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/CISTERNA/CISTERNA 5,000 LTS/2570958261.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA ROTOPLAS 5,000 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="100">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/CISTERNA/CISTERNA 10,000 LTS/2570933959.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA ROTOPLAS 10,000 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin CISTERNAS-->
+                    
+                    <!--Inicio TANQUES Y ACCESORIOS DOMESTICOS-->
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="6">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 600 LTS. ARENA/2648574950.jpg" alt="">
+                        </div>
+                        <h4>MEJOR AGUA GARANTIA DE POR VIDA 600 LTS. ARENA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="7">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 750 LTS. ARENA/2648632277.jpg" alt="">
+                        </div>
+                        <h4>MEJOR AGUA GARANTIA DE POR VIDA 750 LTS. ARENA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="11">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 1100 LTS. ARENA/2648612598.jpg" alt="">
+                        </div>
+                        <h4>MEJOR AGUA GARANTIA DE POR VIDA 1,100 LTS. ARENA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="15">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 1500 LTS ARENA/3100270941.jpg" alt="">
+                        </div>
+                        <h4>MEJOR AGUA GARANTIA DE POR VIDA 1,500 LTS. ARENA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="25">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 2500 LTS. ARENA/2648639759.jpg" alt="">
+                        </div>
+                        <h4>MEJOR AGUA GARANTIA DE POR VIDA 2,500 LTS. ARENA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="11">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA 1100 LTS. NEGRO/2570933947.png" alt="">
+                        </div>
+                        <h4>MEJOR AGUA 1,100 LTS. NEGRO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="15">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA 1500 LTS. NEGRO/2570948362.png" alt="">
+                        </div>
+                        <h4>MEJOR AGUA 1,500 LTS. NEGRO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="25">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA 2500 LTS. NEGRO/2570940150.png" alt="">
+                        </div>
+                        <h4>MEJOR AGUA 2,500 LTS. NEGRO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="2">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/TANQUE MEJOR AGUA 250LTS. CON VALVULA Y FLOT/2648643845.png" alt="">
+                        </div>
+                        <h4>MEJOR AGUA 250LTS. CON VALVULA Y FLOT</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/COMBO VALVULA DE PIE + 2 ELECTRONIVELES/2648599919.jpg" alt="">
+                        </div>
+                        <h4>COMBO VALVULA DE PIE + 2 ELECTRONIVELES</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MULTICONECTOR C VALVULA/2648574990.jpg" alt="">
+                        </div>
+                        <h4>MULTICONECTOR C VALVULA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/TAPA CLICK 18 NEGRA/2648639778.jpg" alt="">
+                        </div>
+                        <h4>TAPA CLICK 18 NEGRA ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin TANQUES Y ACCESORIOS DOMESTICOS-->
+
+                    <!--Incio FILTRO CARTUCHOS Y PURIFICADORES-->
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO JUMBO/2661962997.jpg" alt="">
+                        </div>
+                        <h4>CARTUCHO JUMBO ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO PARA PURIFICADOR ROTOPLAS/2661984429.jpg" alt="">
+                        </div>
+                        <h4>CARTUCHO PARA PURIFICADOR ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO PASO 1 PARA FILTRO DE TANQUE/2662050518.jpg" alt="">
+                        </div>
+                        <h4>CARTUCHO PASO 1 PARA FILTRO DE TANQUE</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/FILTROPLAS JUMBO/2648631670.jpg" alt="">
+                        </div>
+                        <h4>FILTROPLAS JUMBO ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/FILTROPLAS PASO 1 PARA TANQUE/2648648650.jpg" alt="">
+                        </div>
+                        <h4>FILTROPLAS PASO 1 PARA TANQUE</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/PURIFICADOR DE AGUA BAJO LAVADERO/2661961748.png" alt="">
+                        </div>
+                        <h4>PURIFICADOR DE AGUA BAJO LAVADERO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/PURIFICADOR DE AGUA SOBRE LAVADERO/2648632304.png" alt="">
+                        </div>
+                        <h4>PURIFICADOR DE AGUA SOBRE LAVADERO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin FILTRO CARTUCHOS Y PURIFICADORES-->
+
+                    <!--Inicio BOMBAS PARA TANQUES-->
+                    <div class="box" data-nombre="BOMBA" category="Bombas para tanques" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BOMBAS PARA TANQUES/BOMBA CENTRIFUGA DE 1 HP/2589063502.png" alt="">
+                        </div>
+                        <h4>BOMBA CENTRIFUGA DE 1 HP</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BOMBA" category="Bombas para tanques" data-cantidad="0">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BOMBAS PARA TANQUES/BOMBA CENTRIFUGA DE 12 HP/2589061506.png" alt="">
+                        </div>
+                        <h4>BOMBA CENTRIFUGA DE 1/2 HP</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="BOMBA" category="Bombas para tanques" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/BOMBAS PARA TANQUES/BOMBA PERIFERICA DE 12 HP/2589063507.png" alt="">
+                        </div>
+                        <h4>BOMBA PERIFERICA DE 1/2 HP</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin BOMBAS PARA TANQUES-->
+
+                    <!--Inicio TERNAS-->
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/BRAZO DE DUCHA/2589032254.jpg" alt="">
+                        </div>
+                        <h4>BRAZO DE DUCHA ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/DUCHA ELECTRICA 4T 220V BLANCA/2589011816.png" alt="">
+                        </div>
+                        <h4>DUCHA ELECTRICA 4T 220V BLANCA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/DURATERMA DE 50 LTS/2589013538.png" alt="">
+                        </div>
+                        <h4>DURATERMA DE 50 LTS ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/DURATERMA DE 80 LTS/2589009351.png" alt="">
+                        </div>
+                        <h4>DURATERMA DE 80 LTS ROTOPLAS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 6 LTS/2588973149.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS GLP FLAMING 6 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 10 LTS/2589011836.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS GLP FLAMING 10 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 14 LTS/2589035751.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS GLP FLAMING 14 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 5.5 LTS/2588950433.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS NATURAL FLAMING 5.5 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 6 LTS/2589035756.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS NATURAL FLAMING 6 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 10 LTS/2588950428.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS NATURAL FLAMING 10 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 14 LTS/2589026533.png" alt="">
+                        </div>
+                        <h4>TERMA A GAS NATURAL FLAMING 14 LTS</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA PRISMA/3100256468.png" alt="">
+                        </div>
+                        <h4>TERMA INSTANTANEA PRISMA</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SENSATION/2846040133.jpg" alt="">
+                        </div>
+                        <h4>TERMA INSTANTANEA SENSATION</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SENSE PRO/2588936746.png" alt="">
+                        </div>
+                        <h4>TERMA INSTANTANEA SENSE PRO</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+
+                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                        <div class="box-img">
+                            <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SILVER/2589032259.png" alt="">
+                        </div>
+                        <h4>TERMA INSTANTANEA SILVER</h4>
+                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <!--Fin TERNAS-->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+	<footer id="footer">
+        <div class="socials">
+            <h4>CONTACTANOS</h4>
+            <a href="https://www.facebook.com/profile.php?id=100078193081516"><img src="img/ico_fb.png" alt="">DIECAM</a>
+            <a href=""><img src="img/ico_wssp.png" alt="">+51 919 473 580</a>
+        </div>
+        <div class="ubicacion">
+            <h4>UBICANOS</h4>
+            <a href="https://maps.app.goo.gl/ZWHRixfnjfQ9p83x9" target="_blank"><img src="img/ubi.png" alt="">Av. La Mariscala 727, Lima 15818, Perú</a>
+            <br>
+            <br>
+        </div>
+        <div class="horario">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <a ><img src="img/reloj.png" alt="">Lunes - Sábado 8am - 8pm</a>
+            <a href="reclamo.html" class="libro-reclamaciones-logo"><img src="img/libro-reclamaciones.png" style="width: 100px; margin: auto;" alt=""></a>
+            <br>
+        </div>
+    </footer>
+    <div class="group-2">
+        <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
+    </div>
+    <script src="js/menuburger.js"></script>
+    <script src="./js/productos.js"></script>
+</body>
+</html>

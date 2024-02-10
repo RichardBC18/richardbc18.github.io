@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.185);
+    border: none;
+}
+
+button {
+    background-color: #a2cfe9;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2e5fe7;
+    color: white;
+}
+#formulario-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+}
+#mensaje-confirmacion {
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 999;
+}
+
+#volver-link:hover {
+    text-decoration: underline;
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#HOJA {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    margin-top: 80px;
+    position:static;
+    height: 68vh;
+    display: block;
+    margin-bottom: 250px;
+}
+@media only screen and (min-width: 601px) and (max-width: 633px){
+    #HOJA h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 60px;
+    }
+    #HOJA h2{
+        font-size: 30px;
+    }
+    #HOJA label{
+        font-size: 20px;
+    }
+    #HOJA input{
+        font-size: 20px;
+    }
+    .form-footer{
+        padding-top: 50px;
+    }
+    #HOJA{
+        padding-bottom: 750px
+    }
+}
+@media only screen and (min-width: 634px) and (max-width: 1024px) {
+    #HOJA h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 60px;
+    }
+    #HOJA h2{
+        font-size: 40px;
+    }
+    #HOJA label{
+        font-size: 30px;
+    }
+    #HOJA input{
+        font-size: 30px;
+    }
+    .form-footer{
+        padding: 75px;
+    }
+    #HOJA{
+        padding-bottom: 950px;
+    }    
+}
